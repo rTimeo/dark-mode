@@ -1,0 +1,53 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+:root {
+  --clr-light: #ffffff;
+  --clr-dark: #000000;
+
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+}
+
+.darkmode {
+  --clr-light: #ffffff;
+  --clr-dark: #000000;
+  
+
+  --background: var(--clr-dark);
+  --foreground: var(--clr-light);
+
+}
+
+
+body {
+  background: var(--background);
+  
+}
+
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+
